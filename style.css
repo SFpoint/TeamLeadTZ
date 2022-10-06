@@ -1,0 +1,653 @@
+@keyframes slideup {
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
+@keyframes colorchange{
+    0% {
+        background-color: #e0e0e0;
+        border: 3px solid #d6113f;
+    }
+    25%{
+        background-color: #f5c30c;
+        border: 3px solid #e0e0e0;
+
+    }
+    50%{
+        background-color: #11a2d6;
+        border: 3px solid #f5c30c;
+    }
+    75%{
+        background-color: #d6113f;
+        border: 3px solid #11a2d6;
+
+    }
+    100%{ 
+    background-color: #e0e0e0;
+    border: 3px solid #d6113f;
+
+    }
+}
+@keyframes colourUp {
+    0%{background-color: white;
+        border: 3px solid #c1b961;}
+    25%{
+        background-color: #ab3838;
+        border: 3px solid rgba(192, 185, 185, 0.708);
+    }
+    50%{background-color: #c1b961;
+    border: 3px solid #ab3838;}
+    100%{background-color: white;
+    border: 3px solid #c1b961;}
+    
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.promo_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center; 
+width: 100%;
+margin-bottom: 10%;
+}
+
+header{
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 17%);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+header h1{
+    font-family: Lato;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    width: 100%;
+}
+header h1>span{
+    font-weight: 900;
+    color: #f16d7f;
+    margin-right: 37px;
+}
+.promo{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.promo img{
+    width: 45%;
+    padding-right: 5%;
+}
+
+.promo div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo div ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.promo div ul >li{
+    padding-bottom: 25%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.order_btn{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    width: 150px;
+    height: 40px;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(180.0deg, #ab3838 0%, #c1b961 100%);
+    border: 1px solid #e6e6e6;
+    border-radius: 3px 0px 0px 3px;
+    text-align: center;
+}
+.compound_container{
+    background: url(./images/nature.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.compound {
+    width: 1024px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.pills{
+    width: 200px;
+    height: 300px;
+}
+.compound_block {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.ingredient{
+    border: 1px solid rgba(192, 185, 185, 0.708);
+    border-radius: 100px 100px 100px 100px;
+    background-color: rgba(192, 185, 185, 0.708);
+    width: 100px;
+    height: 100px;
+}
+
+.ingredient_block p{
+ color: #cdcdcc;
+}
+.ingredient_block{
+    margin-bottom: 15px;
+}
+.compound_block button{
+    margin-top: 20px;
+}
+.container_review{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.review_block{
+    display: flex;
+    flex-direction: column;
+      border: 1px solid #CCC;
+  border-radius: 15px;
+}
+.carousel {
+  position: relative;
+  width: 420px;
+  padding: 10px 40px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
+}
+
+.carousel img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  display: block;
+  border-radius: 30px;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 390px;
+  overflow: hidden;
+}
+
+.gallery ul {
+    display: flex;
+    flex-direction: row;
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  transition: margin-left 250ms;
+
+}
+
+.gallery li {
+    width: 390px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.gallery li p {
+    font-style: italic;
+}
+
+.promotion_container{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(./images/bio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.promotion {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.promotion img{
+    width: 45%;
+    height: 450px;
+}
+.description{
+    margin-bottom: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(234, 227, 227, 0.818);
+    text-align: center;
+}
+.description p{
+    padding-top: 10px;
+}
+.description p:last-of-type{
+    padding-bottom: 30px;
+}
+.description button{
+    margin-bottom: 75px;
+}
+.charactirestics{
+    background-color: rgba(234, 227, 227, 0.818);
+    margin-bottom: 25px;
+}
+.charactirestics ul >li{
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+.form_order_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form_order{
+    display: flex;
+    width: 1024px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+}
+
+.product{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+.product h1{
+    border: 3px solid rgba(192, 185, 185, 0.708);
+    border-radius: 5px;
+    font-family: Lato;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #222222;
+    padding: 5px;
+    animation-name: colourUp;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.product h1>span{
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #f16d7f;
+}
+
+.timer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.timer_items {
+    display: flex;
+    font-size: 48px;
+  }
+  .timer_item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer_item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer_item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+
+.price{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+}
+.price div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+
+}
+.price p{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.025em; 
+    animation-name: colorchange;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    background-color: gold;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.price div>span{
+    width: 71px;
+    margin-right: 55%;
+    text-decoration: line-through;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.025em; 
+    align-self: center;
+    background-color: rgb(137, 202, 141);
+    border: 1px solid brown;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.order{
+    height: 550px;
+    margin-left: 10%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.order_input input{
+    position: absolute;
+    border: 1px solid black;
+    margin-bottom: 10%;
+    width: 70%;
+    height: 46px;
+    background-color: #e1e1e1;
+    border-radius: 23px;
+    opacity: 0.67;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 54px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #222224;
+    position: relative;
+    padding-left: 20px;
+}
+.order_input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.Hint{
+    position: absolute;
+    align-self: flex-end;
+    width: 300px;
+    background-color: #e1e1e1;
+    display: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    animation-name: slideup;
+    animation-duration: 2s;
+}
+
+.copyright_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6e6;
+    height: 50px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 50px
+}
+
+.rights {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #7a7a7a;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 1023px){
+    .promo img{
+        width: 250px;
+    }
+    .compound_block{width: 150px;
+    }
+    .pills{
+        width: 150px;
+        height: 250px;
+    }
+    .ingredient_block{
+        margin-bottom: 0px;
+    }
+    .ingredient{
+        width: 50px;
+        height: 50px;
+    }
+    .promotion img{
+        margin-top: 25px;
+        height: 350px;
+        width: 300px;
+    }
+    .description p{
+        font-size: 10px;
+    }
+    .description p:last-of-type{
+        padding-bottom: 25px;
+    }
+    .charactirestics ul >li {
+        font-size: 10px;
+        
+    }
+}
+    @media(max-width:667px){
+        .promo{
+            width: 320px;
+        }
+        .promo img{
+            width: 100px;
+            height: 170px;
+        }
+        .promo div ul {
+            width: 50%;
+            margin-left: -10%;
+        }
+        .promo div ul> li {
+            font-size: 7px;
+            padding-bottom: 10%;
+        }
+        .compound_block{width: 100px;
+        }
+        .pills{
+            width: 65px;
+            height: 100px;
+        }
+        .ingredient_block{
+            margin-bottom: 0px;
+        }
+        .ingredient{
+            width: 25px;
+            height: 25px;
+        }
+        .ingredient_block p{
+            font-size: 7px;
+        }
+        .carousel{
+            width: 280px;
+            padding: 10px 20px;
+        }
+        .gallery ul li {
+            width: 390px;
+        }
+        .gallery ul li p{
+            font-size: 10px;
+            width: 300px;
+            
+        }
+        .gallery ul li img{
+            margin-left: 20px;
+        }
+        .promotion{
+            margin-top: 10px;
+        }
+
+        .promotion img{
+            width: 120px;
+            height: 140px;
+        }
+        .description{
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 6px;
+        }
+        .description p:last-of-type{
+            padding-bottom: 10px;
+        }
+        .description button{
+            margin-bottom: 10px;
+            width: 75px;
+            height: 30px;
+        }
+        .charactirestics {
+            display: none;
+        }
+        .price{
+            width: 30%;
+            margin-left: 10%;
+            padding-top: 100px;
+            margin-right: 0%;
+        }
+        .price img{
+            width: 130px;
+            height: 200px;
+        }
+        .price div span{
+            font-size: 15px;
+            width: 41px;
+            margin-right: 35%;
+        }
+        .price div p {
+            font-size: 15px;
+        }
+        .Hint{
+            font-size: 10px;
+            width: 150px;
+        }
+        .order_input{
+            height: 70%;
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+        }
+        .rights{
+            font-size: 15px;
+        }
+        .social{
+            display: none;
+        }
+        .order_input input{
+            font-size: 10px;
+        }
+        .order_btn{
+            width: 100px;
+        }
+    }   
